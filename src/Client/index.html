@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SECURE_CHAT://v0</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+<header>
+  <div class="left">SECURE_CHAT://v0</div>
+  <div class="warn">⚠ UNENCRYPTED — SERVER READS ALL MESSAGES</div>
+  <div id="conn">● DISCONNECTED</div>
+</header>
+
+<div id="joinScreen">
+  <div class="box">
+    <input id="username" placeholder="USERNAME (required)" />
+    <input id="room" placeholder="ROOM ID" />
+    <button id="genBtn">GENERATE ROOM</button>
+    <button id="joinBtn">JOIN ROOM</button>
+  </div>
+</div>
+
+<div id="chatScreen" class="hidden">
+  <div class="chatLayout">
+    <div class="chatBox">
+      <div id="messages"></div>
+    </div>
+    <div class="sideBox">
+      <div>MEMBERS</div>
+      <div id="memberCount">0 ONLINE</div>
+      <div id="members"></div>
+    </div>
+  </div>
+
+  <div class="messageBar">
+    <input id="msg" placeholder="type message..." />
+    <button id="sendBtn">SEND</button>
+  </div>
+
+  <div class="bottomBar">
+    <div id="meta">Room: - | User: -</div>
+    <button id="leaveBtn">LEAVE ROOM</button>
+  </div>
+</div>
+
+<script type="module" src="/Client.js"></script>
+</body>
+</html>

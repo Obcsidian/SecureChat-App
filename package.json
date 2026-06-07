@@ -1,0 +1,28 @@
+{
+  "name": "secure-chat-application",
+  "version": "1.0.0",
+  "description": "\"End to End security based texting platform\"",
+  "license": "MIT",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "_comment-dev": "concurrently \"tsx watch src/index.ts\" \"tsx watch src/Client/Client.ts\"",
+    "_comment-start": "concurrently \"tsx src/index.ts\" \"tsx src/Client/Client.ts\"",
+    "dev": "tsx watch src/Server.ts",
+    "start": "tsx src/Server.ts"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.9.1",
+    "@types/ws": "^8.18.1",
+    "concurrently": "^10.0.3",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "ws": "^8.21.0"
+  }
+}
